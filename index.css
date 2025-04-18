@@ -2,9 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-:root {
   font-family: "Nunito Sans", sans-serif;
 }
 
@@ -19,10 +16,271 @@ p {
   font-weight: 400;
 }
 
+h2,
+p,
 ul,
 li {
   padding: 0;
   margin: 0;
+}
+
+header {
+  background-color: #fff;
+}
+
+header nav {
+  height: 22px;
+  width: 1260px;
+}
+
+header ul {
+  list-style: none;
+}
+
+header ul li:first-child {
+  font-weight: bold;
+}
+
+header .header-content {
+  height: 118px;
+}
+
+header form {
+  border-color: #ddd;
+  width: 594px;
+}
+
+header form .form-content {
+  border: 1px solid;
+  border-radius: 10px;
+  height: 40px;
+}
+
+header form input {
+  border: none;
+  margin-left: 16px;
+  width: 100%;
+  outline: none;
+}
+
+header form .btn-form {
+  background-color: transparent;
+  border: none;
+
+  margin-right: 16px;
+}
+
+header .header-top .user-cart {
+  width: 164px;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* li:hover,
+.dropdown,
+.dropbtn:hover {
+  background-color: red;
+} */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 100%;
+  min-width: 1260px;
+  height: 329px;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 14px;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown-content .list-department {
+  min-width: 234px;
+  background-color: #f5f5f5;
+}
+
+.dropdown-content .list-department ul {
+  width: 190px;
+  height: 298px;
+}
+
+.dropdown-content .list-department ul li,
+.dropdown-content .category a {
+  margin-bottom: 8px;
+}
+
+.dropdown-content .category {
+  width: 100%;
+}
+
+.dropdown:hover {
+  background-color: blue;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#banner-principal {
+  background-color: #e7e7ea;
+  height: 510px;
+}
+
+.banner-content {
+  padding: 0px 2.5px;
+}
+
+.banner-content .title {
+  padding: 0px 2.5px;
+}
+
+/* #banner-secundary {
+  margin: 64px 0px;
+} */
+
+#banner-secundary .banner-content {
+  width: 1177px;
+  height: 747px;
+  margin: 55px 0px;
+}
+
+#banner-secundary .banner-content .banner-img {
+  background-color: #c2c2c2;
+}
+
+#banner-secundary .description {
+  width: 487px;
+  height: 536px;
+}
+
+#banner-secundary .description h2 {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: start;
+  text-transform: uppercase;
+}
+
+#banner-secundary .description p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 22px;
+}
+
+#product-details {
+  background-color: #dedede;
+  height: 820px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.product-content {
+  display: flex;
+  height: 728px;
+  max-width: 1177px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-content .description {
+  max-width: 476px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+}
+
+.product-content .description h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #4f4f4f;
+}
+
+.product-content .description img {
+  height: 90px;
+  width: 90px;
+  margin-right: 20px;
+}
+
+.product-content .description div {
+  margin-top: 50px;
+}
+
+.product-content .description p {
+  font-size: 18px;
+}
+
+#newsletter {
+  margin-top: 64px;
+  margin-bottom: 40px;
+}
+
+.newsletter-content h2 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.newsletter-content span {
+  color: blue;
+}
+
+.newsletter-form {
+  background-color: #dedede;
+  padding: 64px 0px;
+  border-radius: 8px;
+}
+
+.newsletter-form form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1030px;
+  margin: 0 auto;
+}
+
+.newsletter-form label {
+  font-size: 12px;
+}
+
+.newsletter-form label span {
+  text-decoration: underline;
+}
+
+input[name="name"],
+input[name="email"] {
+  height: 48px;
+  max-width: 280px;
+  width: 100%;
+  border-radius: 8px;
+  outline: none;
+  padding-left: 24px;
+  border: none;
+  font-size: 14px;
 }
 
 .footer-top {
@@ -40,6 +298,7 @@ li {
   max-width: 1160px;
   width: 100%;
   display: flex;
+  margin: 0 auto;
 }
 
 .footer-networks {
@@ -76,7 +335,7 @@ li {
   text-align: center;
   max-width: 1074px;
   width: 100%;
-  margin: 40px 0px;
+  margin: 40px auto;
 }
 
 .footer-selos {

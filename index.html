@@ -25,84 +25,235 @@
     <title>Avanti</title>
   </head>
   <body>
-    <footer class="footer-container">
-      <div class="footer-top">
-        <div class="container">
-          <div class="footer-content">
-            <div class="col-md-3">
-              <div class="footer-networks">
-                <img src="./assets/avanti.png" src="Avanti logo" />
-                <div class="footer-social">
-                  <img src="./assets/instagram-icon.png" alt="Instagram logo" />
-                  <img src="./assets/facebook-icon.png" alt="Facebook logo" />
-                  <img src="./assets/youtube-icon.png" alt="Youtube logo" />
-                  <img src="./assets/tiktok-icon.png" alt="Tiktok logo" />
+    <header>
+      <img src="./assets/discount-header.png" alt="cupom DESTONCO10" />
+      <div
+        class="container header-content d-flex flex-column justify-content-center"
+      >
+        <div class="d-flex header-top justify-content-between items-center">
+          <div class="d-flex align-items-center">
+            <img src="./assets/logo-header.png" />
+          </div>
+
+          <form role="search">
+            <div
+              class="form-content d-flex align-content-center justify-content-between"
+            >
+              <input
+                type="search"
+                id="mySearch"
+                name="q"
+                placeholder="Digite aqui oque você procura "
+                aria-label="Search through site content"
+                required
+              />
+              <button class="btn-form">
+                <img src="./assets/search-icon.png" />
+              </button>
+            </div>
+          </form>
+          <div class="d-flex align-items-center user-cart">
+            <img src="./assets/user-icon.png" />
+            <img src="./assets/text-cart.png" />
+            <img src="./assets/cart-icon.png" />
+          </div>
+        </div>
+        <nav>
+          <ul class="d-flex justify-content-between items-center">
+            <div class="dropdown">
+              <li class="dropbtn"><a>Todas as categorias</a></li>
+              <div class="dropdown-content">
+                <div class="d-flex">
+                  <div
+                    class="list-department d-flex align-content-center justify-content-center"
+                  >
+                    <ul>
+                      <li><a href="#">Link 1</a></li>
+                      <li><a href="#">Link 2</a></li>
+                      <li><a href="#">Link 3</a></li>
+                    </ul>
+                  </div>
+                  <div class="category d-flex justify-content-between">
+                    <div>
+                      <a>Categoria</a>
+                      <a>Categoria</a>
+                      <a>Categoria</a>
+                      <a>Categoria</a>
+                      <a>Categoria</a>
+                      <a>Categoria</a>
+                      <a>Categoria</a>
+                      <a>Categoria</a>
+                    </div>
+                    <div>
+                      <a>Categoria</a>
+                      <a>Categoria</a>
+                      <a>Categoria</a>
+                      <a>Categoria</a>
+                      <a>Categoria</a>
+                      <a>Categoria</a>
+                      <a>Categoria</a>
+                      <a>Categoria</a>
+                    </div>
+                    <div>
+                      <a>Categoria</a>
+                      <a>Categoria</a>
+                      <a>Categoria</a>
+                      <a>Categoria</a>
+                      <a>Categoria</a>
+                      <a>Categoria</a>
+                      <a>Categoria</a>
+                      <a>Categoria</a>
+                    </div>
+                    <img src="./assets/caneca-dropdown.png" />
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="footer-institutional col-md-3">
-              <h4><a>Institucional</a></h4>
-              <h5><a>Sobre nós</a></h5>
-              <h5><a>Nossas Lojas</a></h5>
-              <h5><a>Privacidade e Segurança</a></h5>
-              <h5><a>Termos e Condições</a></h5>
-            </div>
-            <div class="footer-help col-md-3">
-              <h4><a>Central de ajuda</a></h4>
-              <h5><a>Fale Conosco</a></h5>
-              <h5><a>Frete e entrega</a></h5>
-              <h5><a>Trocas e devoluções</a></h5>
-              <h5><a>Formas de pagamento</a></h5>
-              <h5><a>FAQ</a></h5>
-            </div>
-            <div class="footer-service col-md-3">
-              <h4><a>Atendimento</a></h4>
-              <h5><a>Telefone (00) 1234-5678</a></h5>
-              <h5><a>E-mail exemplo@exmplo.com.br</a></h5>
-              <h5><a>Horário de atendimento</a></h5>
-              <h5><a>Formas de pagamento</a></h5>
-              <p>
-                Segunda a Sábado: 07h00 às 23h00<br />
-                Domingos e Feriados: 07h00 às 21h00
-              </p>
-            </div>
-          </div>
-          <div class="footer-payments container">
-            <ul>
-              <li><img src="./assets/amex.png" alt="Amex" /></li>
-              <li>
-                <img src="./assets/master-card-icon.png" alt="Mastercard" />
-              </li>
-              <li><img src="./assets/visa.png" alt="Visa" /></li>
-              <li><img src="./assets/hipercard.png" alt="Hipercard" /></li>
-              <li><img src="./assets/elo-icon.png" alt="Elo" /></li>
-              <li><img src="./assets/amex.png" alt="Amex" /></li>
-              <li><img src="./assets/paypal-icon.png" alt="PayPal" /></li>
-              <li><img src="./assets/pix-icon.png" alt="Pix" /></li>
-              <li><img src="./assets/boleto-icon.png" alt="Boleto" /></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom container">
-        <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-          volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-          ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-          Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-          molestie consequat, vel illum dolore eu feugiat nulla facilisis at
-          vero eros et accumsan et iusto odio dignissim qui blandit praesent
-          luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-        </p>
 
-        <div class="footer-selos">
-          <img src="./assets/lets-encrypt.png" alt="encrypt logo" />
-          <img src="./assets/vtex-pci-200.png" alt="vtex certified" />
-          <img src="./assets/avanti-footer.png" alt="avanti logo" />
-          <img src="./assets/vtex-logo.png" alt="vtex logo" />
+            <li class="dropbtn"><a>Departamento</a></li>
+            <li class="dropbtn"><a>Departamento</a></li>
+            <li class="dropbtn"><a>Departamento</a></li>
+            <li class="dropbtn"><a>Departamento</a></li>
+            <li class="dropbtn"><a>Departamento</a></li>
+            <li class="dropbtn"><a>Departamento</a></li>
+            <li class="dropbtn"><a>Departamento</a></li>
+            <li class="dropbtn"><a>Departamento</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="banner-principal">
+      <div class="container d-flex align-items-center">
+        <img
+          class="img-fluid"
+          src="./assets/banner-principal.png"
+          alt="banner principal"
+        />
+        <div
+          class="d-flex justify-content-center flex-column align-items-center banner-content"
+        >
+          <img
+            class="img-fluid title"
+            width="575"
+            height="136"
+            src="./assets/title-banner-principal.png"
+            alt="banner principal"
+          />
+          <img
+            class="img-fluid"
+            width="580"
+            height="34"
+            src="./assets/subtitle.png"
+            alt="banner principal"
+          />
+          <img
+            class="img-fluid"
+            width="244"
+            height="82"
+            src="./assets/discount.png"
+            alt="banner principal"
+          />
         </div>
       </div>
-    </footer>
+    </section>
+    <section id="banner-secundary" class="container">
+      <div
+        class="banner-content d-flex justify-content-between align-items-center"
+      >
+        <div class="banner-img d-flex align-items-center">
+          <img
+            src="./assets/bannser-caneca1.png"
+            class="img-fuild"
+            width="652"
+            height="747"
+          />
+        </div>
+
+        <div
+          class="d-flex flex-column align-items-center justify-content-center description"
+        >
+          <h2>Lorem Ipsum</h2>
+          <p>
+            Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+            finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras
+            efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed
+            lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas
+            fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod
+            orci, auctor fringilla magna consequat interdum. Fusce sagittis elit
+            a libero commodo egestas efficitur id augue.
+          </p>
+          <p>
+            Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+            finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras
+            efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed
+            lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas
+            fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod
+            orci, auctor fringilla magna consequat interdum. Fusce sagittis elit
+            a libero commodo egestas efficitur id augue.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="product-details">
+      <div class="product-content">
+        <div class="description">
+          <h2>Lorem Ipsum</h2>
+          <div class="d-flex justify-content-center align-items-center">
+            <img src="./assets/icon-description.png" />
+            <p>
+              Aenean massa. Cum sociis natoque penatibus et magnis dis
+              parturient montes, nascetur ridiculus mus. Donec quam felis,
+              ultricies nec, pellentesque eu, pretium quis, sem.
+            </p>
+          </div>
+          <div class="d-flex justify-content-center align-items-center">
+            <img src="./assets/icon-description.png" />
+            <p>
+              Aenean massa. Cum sociis natoque penatibus et magnis dis
+              parturient montes, nascetur ridiculus mus. Donec quam felis,
+              ultricies nec, pellentesque eu, pretium quis, sem.
+            </p>
+          </div>
+          <div class="d-flex">
+            <img src="./assets/icon-description.png" />
+            <p>
+              Aenean massa. Cum sociis natoque penatibus et magnis dis
+              parturient montes, nascetur ridiculus mus. Donec quam felis,
+              ultricies nec, pellentesque eu, pretium quis, sem.
+            </p>
+          </div>
+        </div>
+        <img src="./assets/caneca-banner2.png" />
+      </div>
+    </section>
+    <div>
+      <img
+        class="img-fluid"
+        src="./assets/banner-contato.png"
+        alt="banner-avanti"
+      />
+    </div>
+    <section id="newsletter" class="container">
+      <div class="newsletter-content">
+        <h2>Cadastre-se em nossa <span>newsletter</span></h2>
+        <div class="newsletter-form">
+          <form>
+            <input type="text" name="name" placeholder="Digite seu nome" />
+            <input type="email" name="email" placeholder="Digite seu e-mail" />
+            <div>
+              <input type="checkbox" />
+              <label
+                >Estou de acordo com a
+                <span>Política de Privacidade</span></label
+              >
+            </div>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer"></footer>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>
