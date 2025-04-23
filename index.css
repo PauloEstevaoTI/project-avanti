@@ -142,6 +142,111 @@ header .header-top .user-cart {
   display: block;
 }
 
+#carousel {
+  width: 1258px;
+  height: 409px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#carousel .card {
+  width: 238px;
+  height: 409px;
+  border-color: #c2c2c2;
+  border-radius: 12px;
+  padding: 6px 8px 8px;
+}
+
+#carousel .card .badge-new {
+  background-color: #00264e;
+  width: 41px;
+  height: 22px;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 10px;
+  height: 22px;
+  line-height: 22px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 4px;
+}
+
+#carousel .card h3 {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 16px 0px 4px 0px;
+}
+
+#carousel .card .price-container {
+  width: 144px;
+  height: 58px;
+}
+
+#carousel .card .price-container .old-price {
+  text-decoration: line-through;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+#carousel .card .price-container .new-price {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#carousel .card .price-container .discount-badge {
+  background-color: #5ec0be;
+  border-radius: 4px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: underline;
+  width: 64px;
+  height: 20px;
+  text-align: center;
+}
+
+#carousel .card .price-container .installment-info {
+  font-size: 12px;
+}
+
+#carousel .card .price-container .installment-info span {
+  font-weight: 700;
+}
+
+#carousel .card .btn {
+  width: 222px;
+  height: 40px;
+  background-color: #005cff;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+#carousel .carousel-control-prev {
+  justify-content: flex-start !important;
+  width: auto;
+}
+
+#carousel .carousel-control-next {
+  justify-content: flex-start !important;
+  width: auto;
+}
+
+#carousel .carousel-control-prev .carousel-control-prev-icon {
+  background-image: url("./assets/left-arrow.png");
+}
+
+#carousel .carousel-control-next .carousel-control-next-icon {
+  background-image: url("./assets/right-arrow.png");
+}
+
 #banner-principal {
   background-color: #e7e7ea;
   height: 510px;
