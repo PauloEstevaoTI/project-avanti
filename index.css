@@ -368,14 +368,6 @@ header .header-top .user-cart {
   margin: 0 auto;
 }
 
-.newsletter-form label {
-  font-size: 12px;
-}
-
-.newsletter-form label span {
-  text-decoration: underline;
-}
-
 input[name="name"],
 input[name="email"] {
   height: 48px;
@@ -386,6 +378,19 @@ input[name="email"] {
   padding-left: 24px;
   border: none;
   font-size: 14px;
+}
+
+input[name="name"]::placeholder,
+input[name="email"]::placeholder {
+  color: #303030;
+}
+
+.newsletter-form label {
+  font-size: 12px;
+}
+
+.newsletter-form label span {
+  text-decoration: underline;
 }
 
 .footer-top {
@@ -399,16 +404,39 @@ input[name="email"] {
 } */
 
 .footer-content {
-  height: 170px;
-  max-width: 1160px;
+  /* height: 170px;
+  max-width: 1160px; */
   width: 100%;
   display: flex;
   margin: 0 auto;
 }
 
 .footer-networks {
-  height: 26px;
-  max-width: 194px;
+  /* height: 26px;
+  max-width: 194px; */
+}
+
+.footer-mobile .toogle-section {
+  margin-top: 16px;
+  border-top: 1px solid #ccc;
+}
+
+.footer-mobile .toggle-header {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 16px 0;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+}
+
+.footer-mobile .content-content {
+  display: none;
+  padding-left: 8px;
+  padding-bottom: 8px;
 }
 
 .footer-social {
@@ -451,4 +479,232 @@ input[name="email"] {
   max-width: 296px;
   width: 100%;
   height: 32px;
+}
+
+.toggle-content {
+  display: none;
+}
+
+@media (min-width: 390px) and (max-width: 575px) {
+  header .discount-header {
+    display: none;
+  }
+
+  header .discount-header-mobile {
+    height: 52px;
+    background-color: #005cff;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  header .discount-header-mobile p {
+    width: 346px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+  }
+  header .discount-header-mobile .discount {
+    background-color: #6220c1;
+    padding: 1px;
+  }
+
+  header .discount-header-mobile .cupom {
+    font-weight: 400;
+  }
+
+  header .container-header-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 132px;
+  }
+
+  header .container-header-mobile .header-mobile-top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header .container-header-mobile form {
+    height: 40px;
+    width: 360px;
+    margin-top: 23px;
+    margin-bottom: 16px;
+  }
+
+  header .header-content {
+    display: none;
+  }
+
+  #banner-secundary {
+    height: 732px;
+  }
+
+  #banner-secundary .banner-content {
+    display: block;
+    width: 391px;
+    height: 732px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #banner-secundary .banner-content .banner-img {
+    display: none;
+  }
+
+  #banner-secundary .banner-content .description {
+    display: none;
+  }
+
+  #banner-secundary .banner-content .description-mobile {
+    width: 342px;
+    padding: 38px 0px;
+    margin: 0 auto;
+  }
+
+  #banner-secundary .banner-content .description-mobile h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  #banner-secundary .banner-content .description-mobile p {
+    margin-top: 18px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  #banner-contact-mobile {
+    height: 449px;
+    background-image: url("./assets/banner-contato-mobile.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+  }
+
+  #banner-contact-mobile .banner-content {
+    background-color: #005cff;
+    height: 75px;
+    display: flex;
+    align-items: center;
+  }
+
+  #banner-contact-mobile .banner-content p {
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    /* line-height: ; */
+  }
+
+  #newsletter .newsletter-content {
+    width: 358px;
+    margin: 0 auto;
+  }
+
+  #newsletter .newsletter-form {
+    padding: 38px 16px;
+    height: 284px;
+    width: 358px;
+  }
+
+  #newsletter .newsletter-form form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  input[name="name"],
+  input[name="email"] {
+    margin-bottom: 16px;
+    height: 48px;
+    max-width: 326px;
+    width: 100%;
+    border-radius: 8px;
+    outline: none;
+    padding-left: 24px;
+    border: none;
+    font-size: 14px;
+  }
+
+  #newsletter .newsletter-content .newsletter-form form button {
+    margin-top: 16px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 700;
+    width: 326px;
+  }
+
+  .footer-top {
+    height: 496px;
+    padding: 40px 0px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #footer .footer-container .footer-top .footer-networks {
+    width: 194px;
+    height: 94px;
+    margin-bottom: 48px;
+  }
+
+  #footer .footer-container .footer-top .footer-networks .footer-logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  #footer .footer-container .footer-top .footer-content .toogle-section {
+    width: 100%;
+    border-top: 1px solid #c3c3c3;
+  }
+
+  #footer
+    .footer-container
+    .footer-top
+    .footer-content
+    .toogle-section:nth-last-child {
+    border-bottom: 1px solid #c3c3c3;
+  }
+
+  #footer .footer-container .footer-top .footer-content .toogle-section h4 {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  #footer .footer-container .footer-top .footer-content .toogle-section h4 a {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #footer .footer-container .footer-top .footer-content .toogle-content {
+    display: none;
+  }
+
+  #footer .footer-container .footer-top .footer-payments {
+    width: 290px;
+    height: 64px;
+    margin-top: 48px;
+    padding: 0px;
+  }
+
+  #footer .footer-container .footer-top .footer-payments ul {
+    display: flex;
+    flex-wrap: wrap; /* permite quebrar para uma nova linha */
+    justify-content: center; /* centraliza horizontalmente */
+    gap: 22px; /* espaçamento entre os itens */
+    padding: 0;
+    margin: 0 auto;
+  }
 }
