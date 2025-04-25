@@ -301,12 +301,12 @@ header .header-top .user-cart {
 }
 
 .product-content {
-  display: flex;
-  height: 728px;
-  max-width: 1177px;
+  /* display: flex; */
+  /* height: 728px; */
+  /* max-width: 1177px;
   width: 100%;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
 }
 
 .product-content .description {
@@ -330,12 +330,16 @@ header .header-top .user-cart {
   margin-right: 20px;
 }
 
-.product-content .description div {
+/* .product-content .description div {
   margin-top: 50px;
-}
+} */
 
 .product-content .description p {
   font-size: 18px;
+}
+
+.product-content .description .description-content .description-img {
+  margin-top: 0px;
 }
 
 #newsletter {
@@ -485,7 +489,7 @@ input[name="email"]::placeholder {
   display: none;
 }
 
-@media (min-width: 390px) and (max-width: 575px) {
+@media (min-width: 390px) and (max-width: 767px) {
   header .discount-header {
     display: none;
   }
@@ -547,7 +551,7 @@ input[name="email"]::placeholder {
     display: block;
     width: 391px;
     height: 732px;
-    margin: 0px;
+    margin: 0px auto;
     padding: 0px;
   }
 
@@ -561,7 +565,7 @@ input[name="email"]::placeholder {
 
   #banner-secundary .banner-content .description-mobile {
     width: 342px;
-    padding: 38px 0px;
+    padding-top: 38px;
     margin: 0 auto;
   }
 
@@ -575,6 +579,61 @@ input[name="email"]::placeholder {
     margin-top: 18px;
     font-size: 14px;
     font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 0.7px;
+  }
+
+  #product-details {
+    height: 718px;
+    margin: 56px 0px;
+  }
+
+  #product-details .product-content {
+    padding: 28px 0px;
+  }
+
+  #product-details .product-content .banner-img {
+    display: none;
+  }
+
+  #product-details .product-content .description h2 {
+    line-height: 1.4;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: #000;
+    font-weight: 700;
+    margin: 21px 0px;
+  }
+
+  #product-details .product-content .description {
+    width: 350px;
+    padding: 0px;
+  }
+
+  .product-content .description-content {
+    height: 68px;
+    margin-top: 0px;
+    margin-bottom: 18px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+  }
+
+  .product-content .description-content:last-child {
+    margin-bottom: 0;
+  }
+
+  #product-details .product-content .description p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.4;
+    letter-spacing: 0.6px;
+  }
+
+  #product-details .product-content .description img {
+    height: 60px;
+    width: 60px;
+    margin-right: 14px;
   }
 
   #banner-contact-mobile {
@@ -584,6 +643,7 @@ input[name="email"]::placeholder {
     background-size: cover;
     display: flex;
     align-items: center;
+    margin: 56px 0;
   }
 
   #banner-contact-mobile .banner-content {
@@ -591,6 +651,8 @@ input[name="email"]::placeholder {
     height: 75px;
     display: flex;
     align-items: center;
+    width: 100%;
+    justify-content: center;
   }
 
   #banner-contact-mobile .banner-content p {
