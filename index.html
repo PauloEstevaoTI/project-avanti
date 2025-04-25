@@ -25,151 +25,11 @@
     <title>Avanti</title>
   </head>
   <body>
-    <header>
-      <img
-        src="./assets/discount-header.png"
-        alt="cupom DESTONCO10"
-        class="img-fluid discount-header"
-      />
-      <div class="discount-header-mobile">
-        <p>
-          Ganhe <span class="discount">R$10,00</span> de desconto no seu
-          primeiro pedido. Utilize o cupom <span class="cupom">DESCONTO10</span>
-        </p>
-      </div>
-      <div class="container-header-mobile">
-        <div class="">
-          <div class="header-mobile-top">
-            <img src="./assets/menu-header-mobile.png" alt="menu" />
-            <img src="./assets/logo-avanti-mobile.png" alt="logo-mobile" />
-            <img src="./assets/cart-icon-mobile.png" />
-          </div>
-          <div>
-            <form role="search">
-              <div
-                class="form-content d-flex align-content-center justify-content-between"
-              >
-                <input
-                  type="search"
-                  id="mySearch"
-                  name="q"
-                  placeholder="Digite aqui oque você procura "
-                  aria-label="Search through site content"
-                  required
-                />
-                <button class="btn-form">
-                  <img src="./assets/search-icon.png" />
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="container header-content d-md-flex flex-column justify-content-center"
-      >
-        <div class="d-flex header-top justify-content-between items-center">
-          <div class="d-flex align-items-center">
-            <img src="./assets/logo-header.png" />
-          </div>
-
-          <form role="search">
-            <div
-              class="form-content d-flex align-content-center justify-content-between"
-            >
-              <input
-                type="search"
-                id="mySearch"
-                name="q"
-                placeholder="Digite aqui oque você procura "
-                aria-label="Search through site content"
-                required
-              />
-              <button class="btn-form">
-                <img src="./assets/search-icon.png" />
-              </button>
-            </div>
-          </form>
-          <div class="d-flex align-items-center user-cart">
-            <img src="./assets/user-icon.png" />
-            <img src="./assets/text-cart.png" />
-            <img src="./assets/cart-icon.png" />
-          </div>
-        </div>
-        <nav>
-          <ul class="d-flex justify-content-between items-center">
-            <div class="dropdown">
-              <li class="dropbtn"><a>Todas as categorias</a></li>
-              <div class="dropdown-content">
-                <div class="d-flex">
-                  <div
-                    class="list-department d-flex align-content-center justify-content-center"
-                  >
-                    <ul>
-                      <li><a href="#">Link 1</a></li>
-                      <li><a href="#">Link 2</a></li>
-                      <li><a href="#">Link 3</a></li>
-                    </ul>
-                  </div>
-                  <div class="category d-flex justify-content-between">
-                    <div>
-                      <a>Categoria</a>
-                      <a>Categoria</a>
-                      <a>Categoria</a>
-                      <a>Categoria</a>
-                      <a>Categoria</a>
-                      <a>Categoria</a>
-                      <a>Categoria</a>
-                      <a>Categoria</a>
-                    </div>
-                    <div>
-                      <a>Categoria</a>
-                      <a>Categoria</a>
-                      <a>Categoria</a>
-                      <a>Categoria</a>
-                      <a>Categoria</a>
-                      <a>Categoria</a>
-                      <a>Categoria</a>
-                      <a>Categoria</a>
-                    </div>
-                    <div>
-                      <a>Categoria</a>
-                      <a>Categoria</a>
-                      <a>Categoria</a>
-                      <a>Categoria</a>
-                      <a>Categoria</a>
-                      <a>Categoria</a>
-                      <a>Categoria</a>
-                      <a>Categoria</a>
-                    </div>
-                    <img src="./assets/caneca-dropdown.png" />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <li class="dropbtn"><a>Departamento</a></li>
-            <li class="dropbtn"><a>Departamento</a></li>
-            <li class="dropbtn"><a>Departamento</a></li>
-            <li class="dropbtn"><a>Departamento</a></li>
-            <li class="dropbtn"><a>Departamento</a></li>
-            <li class="dropbtn"><a>Departamento</a></li>
-            <li class="dropbtn"><a>Departamento</a></li>
-            <li class="dropbtn"><a>Departamento</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <header id="header"></header>
 
     <section id="banner-principal">
-      <div class="container-banner-principal-mobile">
-        <img
-          src="./assets/banner-principal-mobile.png"
-          alt="banner principal  mobile"
-        />
-      </div>
-      <div class="d-none container align-items-center">
+      <div class="container-banner-principal-mobile"></div>
+      <div class="banner-principal-img">
         <img
           class="img-fluid"
           src="./assets/banner-principal.png"
@@ -202,152 +62,236 @@
         </div>
       </div>
     </section>
-    <!-- <section id="carousel" class="crousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active d-flex justify-content-between">
-          <div class="card relative">
-            <span class="badge-new d-inline-block position-absolute">Novo</span>
-            <img src="./assets/product.png" alt="produto" />
-            <h3 class="text-center">
-              Lorem ipsum dolor sit amet consectetuer adipiscing elit
-            </h3>
-            <div class="price-container">
-              <div
-                class="d-flex price-content align-items-center justify-content-between"
+
+    <section class="carousel">
+      <div class="carousel-top">
+        <h2>Lançamentos</h2>
+        <span>Ver mais</span>
+      </div>
+      <button class="carousel-control-prev" id="btn-prev">
+        <img src="./assets/left-arrow.png" />
+      </button>
+      <button class="carousel-control-next" id="btn-next">
+        <img src="./assets/right-arrow.png" />
+      </button>
+      <div class="custom-carousel">
+        <div class="carousel-track-wrapper">
+          <div class="carousel-track" id="carousel-track">
+            <div class="card relative">
+              <span class="badge-new d-inline-block position-absolute"
+                >Novo</span
               >
-                <div>
-                  <p class="old-price">R$100,00</p>
-                  <p class="new-price">R$ 79,90</p>
+              <img src="./assets/product.png" alt="produto" />
+              <h3 class="text-center">
+                Lorem ipsum dolor sit amet consectetuer adipiscing elit
+              </h3>
+              <div class="price-container">
+                <div
+                  class="d-flex price-content align-items-center justify-content-between"
+                >
+                  <div>
+                    <p class="old-price">R$100,00</p>
+                    <p class="new-price">R$ 79,90</p>
+                  </div>
+                  <div class="discount-badge">
+                    <img src="./assets/discount-product.png" />
+                  </div>
                 </div>
-                <div class="discount-badge">
-                  <img src="./assets/discount-product.png" />
-                </div>
+                <p class="installment-info">
+                  Ou em até <span>10x de R$ 7,90</span>
+                </p>
               </div>
-              <p class="installment-info">
-                Ou em até <span>10x de R$ 7,90</span>
-              </p>
+              <a href="#" class="btn btn-primary w-100">Comprar</a>
             </div>
-            <a href="#" class="btn btn-primary w-100">Comprar</a>
-          </div>
-          <div class="card relative">
-            <span class="badge-new d-inline-block position-absolute">Novo</span>
-            <img src="./assets/product.png" alt="produto" />
-            <h3 class="text-center">
-              Lorem ipsum dolor sit amet consectetuer adipiscing elit
-            </h3>
-            <div class="price-container">
-              <div
-                class="d-flex price-content align-items-center justify-content-between"
+            <div class="card relative">
+              <span class="badge-new d-inline-block position-absolute"
+                >Novo</span
               >
-                <div>
-                  <p class="old-price">R$100,00</p>
-                  <p class="new-price">R$ 79,90</p>
+              <img src="./assets/product.png" alt="produto" />
+              <h3 class="text-center">
+                Lorem ipsum dolor sit amet consectetuer adipiscing elit
+              </h3>
+              <div class="price-container">
+                <div
+                  class="d-flex price-content align-items-center justify-content-between"
+                >
+                  <div>
+                    <p class="old-price">R$100,00</p>
+                    <p class="new-price">R$ 79,90</p>
+                  </div>
+                  <div class="discount-badge">
+                    <img src="./assets/discount-product.png" />
+                  </div>
                 </div>
-                <div class="discount-badge">
-                  <img src="./assets/discount-product.png" />
-                </div>
+                <p class="installment-info">
+                  Ou em até <span>10x de R$ 7,90</span>
+                </p>
               </div>
-              <p class="installment-info">
-                Ou em até <span>10x de R$ 7,90</span>
-              </p>
+              <a href="#" class="btn btn-primary w-100">Comprar</a>
             </div>
-            <a href="#" class="btn btn-primary w-100">Comprar</a>
-          </div>
-          <div class="card relative">
-            <span class="badge-new d-inline-block position-absolute">Novo</span>
-            <img src="./assets/product.png" alt="produto" />
-            <h3 class="text-center">
-              Lorem ipsum dolor sit amet consectetuer adipiscing elit
-            </h3>
-            <div class="price-container">
-              <div
-                class="d-flex price-content align-items-center justify-content-between"
+            <div class="card relative">
+              <span class="badge-new d-inline-block position-absolute"
+                >Novo</span
               >
-                <div>
-                  <p class="old-price">R$100,00</p>
-                  <p class="new-price">R$ 79,90</p>
+              <img src="./assets/product.png" alt="produto" />
+              <h3 class="text-center">
+                Lorem ipsum dolor sit amet consectetuer adipiscing elit
+              </h3>
+              <div class="price-container">
+                <div
+                  class="d-flex price-content align-items-center justify-content-between"
+                >
+                  <div>
+                    <p class="old-price">R$100,00</p>
+                    <p class="new-price">R$ 79,90</p>
+                  </div>
+                  <div class="discount-badge">
+                    <img src="./assets/discount-product.png" />
+                  </div>
                 </div>
-                <div class="discount-badge">
-                  <img src="./assets/discount-product.png" />
-                </div>
+                <p class="installment-info">
+                  Ou em até <span>10x de R$ 7,90</span>
+                </p>
               </div>
-              <p class="installment-info">
-                Ou em até <span>10x de R$ 7,90</span>
-              </p>
+              <a href="#" class="btn btn-primary w-100">Comprar</a>
             </div>
-            <a href="#" class="btn btn-primary w-100">Comprar</a>
-          </div>
-          <div class="card relative">
-            <span class="badge-new d-inline-block position-absolute">Novo</span>
-            <img src="./assets/product.png" alt="produto" />
-            <h3 class="text-center">
-              Lorem ipsum dolor sit amet consectetuer adipiscing elit
-            </h3>
-            <div class="price-container">
-              <div
-                class="d-flex price-content align-items-center justify-content-between"
+            <div class="card relative">
+              <span class="badge-new d-inline-block position-absolute"
+                >Novo</span
               >
-                <div>
-                  <p class="old-price">R$100,00</p>
-                  <p class="new-price">R$ 79,90</p>
+              <img src="./assets/product.png" alt="produto" />
+              <h3 class="text-center">
+                Lorem ipsum dolor sit amet consectetuer adipiscing elit
+              </h3>
+              <div class="price-container">
+                <div
+                  class="d-flex price-content align-items-center justify-content-between"
+                >
+                  <div>
+                    <p class="old-price">R$100,00</p>
+                    <p class="new-price">R$ 79,90</p>
+                  </div>
+                  <div class="discount-badge">
+                    <img src="./assets/discount-product.png" />
+                  </div>
                 </div>
-                <div class="discount-badge">
-                  <img src="./assets/discount-product.png" />
-                </div>
+                <p class="installment-info">
+                  Ou em até <span>10x de R$ 7,90</span>
+                </p>
               </div>
-              <p class="installment-info">
-                Ou em até <span>10x de R$ 7,90</span>
-              </p>
+              <a href="#" class="btn btn-primary w-100">Comprar</a>
             </div>
-            <a href="#" class="btn btn-primary w-100">Comprar</a>
-          </div>
-          <div class="card relative">
-            <span class="badge-new d-inline-block position-absolute">Novo</span>
-            <img src="./assets/product.png" alt="produto" />
-            <h3 class="text-center">
-              Lorem ipsum dolor sit amet consectetuer adipiscing elit
-            </h3>
-            <div class="price-container">
-              <div
-                class="d-flex price-content align-items-center justify-content-between"
+            <div class="card relative">
+              <span class="badge-new d-inline-block position-absolute"
+                >Novo</span
               >
-                <div>
-                  <p class="old-price">R$100,00</p>
-                  <p class="new-price">R$ 79,90</p>
+              <img src="./assets/product.png" alt="produto" />
+              <h3 class="text-center">
+                Lorem ipsum dolor sit amet consectetuer adipiscing elit
+              </h3>
+              <div class="price-container">
+                <div
+                  class="d-flex price-content align-items-center justify-content-between"
+                >
+                  <div>
+                    <p class="old-price">R$100,00</p>
+                    <p class="new-price">R$ 79,90</p>
+                  </div>
+                  <div class="discount-badge">
+                    <img src="./assets/discount-product.png" />
+                  </div>
                 </div>
-                <div class="discount-badge">
-                  <img src="./assets/discount-product.png" />
-                </div>
+                <p class="installment-info">
+                  Ou em até <span>10x de R$ 7,90</span>
+                </p>
               </div>
-              <p class="installment-info">
-                Ou em até <span>10x de R$ 7,90</span>
-              </p>
+              <a href="#" class="btn btn-primary w-100">Comprar</a>
             </div>
-            <a href="#" class="btn btn-primary w-100">Comprar</a>
+            <div class="card relative">
+              <span class="badge-new d-inline-block position-absolute"
+                >Novo</span
+              >
+              <img src="./assets/product.png" alt="produto" />
+              <h3 class="text-center">
+                Lorem ipsum dolor sit amet consectetuer adipiscing elit
+              </h3>
+              <div class="price-container">
+                <div
+                  class="d-flex price-content align-items-center justify-content-between"
+                >
+                  <div>
+                    <p class="old-price">R$100,00</p>
+                    <p class="new-price">R$ 79,90</p>
+                  </div>
+                  <div class="discount-badge">
+                    <img src="./assets/discount-product.png" />
+                  </div>
+                </div>
+                <p class="installment-info">
+                  Ou em até <span>10x de R$ 7,90</span>
+                </p>
+              </div>
+              <a href="#" class="btn btn-primary w-100">Comprar</a>
+            </div>
+            <div class="card relative">
+              <span class="badge-new d-inline-block position-absolute"
+                >Novo</span
+              >
+              <img src="./assets/product.png" alt="produto" />
+              <h3 class="text-center">
+                Lorem ipsum dolor sit amet consectetuer adipiscing elit
+              </h3>
+              <div class="price-container">
+                <div
+                  class="d-flex price-content align-items-center justify-content-between"
+                >
+                  <div>
+                    <p class="old-price">R$100,00</p>
+                    <p class="new-price">R$ 79,90</p>
+                  </div>
+                  <div class="discount-badge">
+                    <img src="./assets/discount-product.png" />
+                  </div>
+                </div>
+                <p class="installment-info">
+                  Ou em até <span>10x de R$ 7,90</span>
+                </p>
+              </div>
+              <a href="#" class="btn btn-primary w-100">Comprar</a>
+            </div>
+            <div class="card relative">
+              <span class="badge-new d-inline-block position-absolute"
+                >Novo</span
+              >
+              <img src="./assets/product.png" alt="produto" />
+              <h3 class="text-center">
+                Lorem ipsum dolor sit amet consectetuer adipiscing elit
+              </h3>
+              <div class="price-container">
+                <div
+                  class="d-flex price-content align-items-center justify-content-between"
+                >
+                  <div>
+                    <p class="old-price">R$100,00</p>
+                    <p class="new-price">R$ 79,90</p>
+                  </div>
+                  <div class="discount-badge">
+                    <img src="./assets/discount-product.png" />
+                  </div>
+                </div>
+                <p class="installment-info">
+                  Ou em até <span>10x de R$ 7,90</span>
+                </p>
+              </div>
+              <a href="#" class="btn btn-primary w-100">Comprar</a>
+            </div>
           </div>
         </div>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carousel"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carousel"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon"></span>
-      </button>
-    </section> -->
+    </section>
+
     <section id="banner-secundary">
-      <div
-        class="banner-content d:md:flex justify-content-between align-items-center"
-      >
+      <div class="banner-content justify-content-between align-items-center">
         <div class="banner-img d:md:flex align-items-center">
           <img
             src="./assets/banner-caneca1.png"
@@ -357,7 +301,7 @@
           />
         </div>
 
-        <div class="banner-img-mobile d-flex align-items-center">
+        <div class="banner-img-mobile align-items-center">
           <img src="./assets/banner-caneca1-mobile.png" />
         </div>
 
@@ -448,9 +392,7 @@
       </div>
     </section>
     <section id="banner-secundary">
-      <div
-        class="banner-content d:md:flex justify-content-between align-items-center"
-      >
+      <div class="banner-content">
         <div class="banner-img d:md:flex align-items-center">
           <img
             src="./assets/banner-caneca1.png"
@@ -460,7 +402,7 @@
           />
         </div>
 
-        <div class="banner-img-mobile d-flex align-items-center">
+        <div class="banner-img-mobile align-items-center">
           <img src="./assets/banner-caneca1-mobile.png" />
         </div>
 
@@ -506,155 +448,7 @@
         </div>
       </div>
     </section>
-    <!-- <section id="carousel" class="crousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active d-flex justify-content-between">
-          <div class="card relative">
-            <span class="badge-new d-inline-block position-absolute">Novo</span>
-            <img src="./assets/product.png" alt="produto" />
-            <h3 class="text-center">
-              Lorem ipsum dolor sit amet consectetuer adipiscing elit
-            </h3>
-            <div class="price-container">
-              <div
-                class="d-flex price-content align-items-center justify-content-between"
-              >
-                <div>
-                  <p class="old-price">R$100,00</p>
-                  <p class="new-price">R$ 79,90</p>
-                </div>
-                <div class="discount-badge">
-                  <img src="./assets/discount-product.png" />
-                </div>
-              </div>
-              <p class="installment-info">
-                Ou em até <span>10x de R$ 7,90</span>
-              </p>
-            </div>
-            <a href="#" class="btn btn-primary w-100">Comprar</a>
-          </div>
-          <div class="card relative">
-            <span class="badge-new d-inline-block position-absolute">Novo</span>
-            <img src="./assets/product.png" alt="produto" />
-            <h3 class="text-center">
-              Lorem ipsum dolor sit amet consectetuer adipiscing elit
-            </h3>
-            <div class="price-container">
-              <div
-                class="d-flex price-content align-items-center justify-content-between"
-              >
-                <div>
-                  <p class="old-price">R$100,00</p>
-                  <p class="new-price">R$ 79,90</p>
-                </div>
-                <div class="discount-badge">
-                  <img src="./assets/discount-product.png" />
-                </div>
-              </div>
-              <p class="installment-info">
-                Ou em até <span>10x de R$ 7,90</span>
-              </p>
-            </div>
-            <a href="#" class="btn btn-primary w-100">Comprar</a>
-          </div>
-          <div class="card relative">
-            <span class="badge-new d-inline-block position-absolute">Novo</span>
-            <img src="./assets/product.png" alt="produto" />
-            <h3 class="text-center">
-              Lorem ipsum dolor sit amet consectetuer adipiscing elit
-            </h3>
-            <div class="price-container">
-              <div
-                class="d-flex price-content align-items-center justify-content-between"
-              >
-                <div>
-                  <p class="old-price">R$100,00</p>
-                  <p class="new-price">R$ 79,90</p>
-                </div>
-                <div class="discount-badge">
-                  <img src="./assets/discount-product.png" />
-                </div>
-              </div>
-              <p class="installment-info">
-                Ou em até <span>10x de R$ 7,90</span>
-              </p>
-            </div>
-            <a href="#" class="btn btn-primary w-100">Comprar</a>
-          </div>
-          <div class="card relative">
-            <span class="badge-new d-inline-block position-absolute">Novo</span>
-            <img src="./assets/product.png" alt="produto" />
-            <h3 class="text-center">
-              Lorem ipsum dolor sit amet consectetuer adipiscing elit
-            </h3>
-            <div class="price-container">
-              <div
-                class="d-flex price-content align-items-center justify-content-between"
-              >
-                <div>
-                  <p class="old-price">R$100,00</p>
-                  <p class="new-price">R$ 79,90</p>
-                </div>
-                <div class="discount-badge">
-                  <img src="./assets/discount-product.png" />
-                </div>
-              </div>
-              <p class="installment-info">
-                Ou em até <span>10x de R$ 7,90</span>
-              </p>
-            </div>
-            <a href="#" class="btn btn-primary w-100">Comprar</a>
-          </div>
-          <div class="card relative">
-            <span class="badge-new d-inline-block position-absolute">Novo</span>
-            <img src="./assets/product.png" alt="produto" />
-            <h3 class="text-center">
-              Lorem ipsum dolor sit amet consectetuer adipiscing elit
-            </h3>
-            <div class="price-container">
-              <div
-                class="d-flex price-content align-items-center justify-content-between"
-              >
-                <div>
-                  <p class="old-price">R$100,00</p>
-                  <p class="new-price">R$ 79,90</p>
-                </div>
-                <div class="discount-badge">
-                  <img src="./assets/discount-product.png" />
-                </div>
-              </div>
-              <p class="installment-info">
-                Ou em até <span>10x de R$ 7,90</span>
-              </p>
-            </div>
-            <a href="#" class="btn btn-primary w-100">Comprar</a>
-          </div>
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carousel"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carousel"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon"></span>
-      </button>
-    </section> -->
-    <!-- <div>
-      <img
-        class="img-fluid"
-        src="./assets/banner-contato.png"
-        alt="banner-avanti"
-      />
-    </div> -->
+
     <section id="banner-contact-mobile">
       <div class="banner-content">
         <p>
@@ -686,5 +480,8 @@
 
     <footer id="footer"></footer>
     <script src="./scripts/index.js"></script>
+    <script src="./scripts/carousel/index.js"></script>
+    <script src="./scripts/toogle-footer/index.js"></script>
+    <script src="./scripts/cart-icon/index.js"></script>
   </body>
 </html>
